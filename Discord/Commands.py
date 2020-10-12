@@ -77,8 +77,19 @@ async def unban(ctx,*,member):
             await ctx.guild.unban(user)
             await ctx.send(f'Unbanned {user.mention}')
             return
+        
+        
+        
+@client.command()
+async def helpme(context):
 
+    myEmbed=discord.Embed(title="Here are some Commands i can do for you just type Below mentioned  ",
+                          description="1) .Server\n2) .version\n3) .ping\n4) .8ball\n5) .clear\n6.) .kick\n7) .ban\n8) .unban",
+                          color=discord.Color.red())
+    myEmbed.add_field(name="v0.1 Commands ",value="12th Oct,2020",inline=True)
+    myEmbed.set_footer(text="Thank-you !! ")
 
+    await context.send(embed=myEmbed)
 
 
 
