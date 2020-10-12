@@ -90,6 +90,7 @@ async def helpme(context):
     myEmbed.set_footer(text="Thank-you !! ")
 
     await context.send(embed=myEmbed)
+    
 
 
 
